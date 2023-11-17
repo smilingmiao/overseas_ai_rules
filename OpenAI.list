@@ -1,6 +1,7 @@
 HOST,ai.cn,OpenAI
 HOST-SUFFIX,ai.com,OpenAI
 HOST-SUFFIX,auth0.com,OpenAI
+HOST-SUFFIX,browser-intake-datadoghq.com,OpenAI
 HOST-SUFFIX,challenges.cloudflare.com,OpenAI
 HOST-SUFFIX,client-api.arkoselabs.com,OpenAI
 HOST-SUFFIX,events.statsigapi.net,OpenAI
@@ -8,9 +9,13 @@ HOST-SUFFIX,featuregates.org,OpenAI
 HOST-SUFFIX,identrust.com,OpenAI
 HOST-SUFFIX,intercom.io,OpenAI
 HOST-SUFFIX,intercomcdn.com,OpenAI
-HOST-SUFFIX,poe.com,OpenAI
-HOST-SUFFIX,sentry.io,OpenAI
-HOST-SUFFIX,stripe.com,OpenAI
+HOST-SUFFIX,openai.com,OpenAI
 HOST-SUFFIX,oaistatic.com,OpenAI
 HOST-SUFFIX,oaiusercontent.com,OpenAI
+HOST-SUFFIX,poe.com,OpenAI
+HOST-SUFFIX,revenuecat.com,OpenAI
+HOST-SUFFIX,statsig.com,OpenAI
+HOST-SUFFIX,sentry.io,OpenAI
+HOST-SUFFIX,stripe.com,OpenAI
+# HOST-KEYWORD
 HOST-KEYWORD,openai,OpenAI
