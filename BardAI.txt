@@ -1,4 +1,3 @@
 # Google BardAI
 payload:
-  # Google BardAI
   - DOMAIN-SUFFIX,bard.google.com,BardAI
