@@ -21,3 +21,7 @@ payload:
   - DOMAIN-SUFFIX,stripe.com,OpenAI
   # DOMAIN-KEYWORD
   - DOMAIN-KEYWORD,openai,OpenAI
+  # Google BardAI
+  - DOMAIN-SUFFIX,bard.google.com,BardAI
+  # Microsoft Copilot
+  - DOMAIN-SUFFIX,copilot.microsoft.com,Copilot
