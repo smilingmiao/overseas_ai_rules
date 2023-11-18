@@ -1,7 +1,18 @@
-# open_ai_rules
+# ai_rules
 
 **QX**
-👉🏻️: https://raw.githubusercontent.com/smilingmiao/open_ai_rules/main/OpenAI.list
+
+OpenAI
+👉🏻️: https://raw.githubusercontent.com/smilingmiao/overseas_ai_rules/main/OpenAI.list
 
 **Clash** 
-👉🏻️: https://raw.githubusercontent.com/smilingmiao/open_ai_rules/main/clash_openai.txt
+
+OpenAI
+👉🏻️: https://raw.githubusercontent.com/smilingmiao/overseas_ai_rules/main/OpenAI.txt
+
+BardAI
+👉🏻️: https://raw.githubusercontent.com/smilingmiao/overseas_ai_rules/main/BardAI.txt
+
+Copilot
+👉🏻️: https://raw.githubusercontent.com/smilingmiao/overseas_ai_rules/main/Copilot.txt
+
