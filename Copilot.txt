@@ -2,4 +2,4 @@
 payload:
   - DOMAIN-SUFFIX,copilot.microsoft.com,Copilot
   - DOMAIN-SUFFIX,bingapis.com,Copilot
-  - DOMAIN-SUFFIX,sydney.bing.com,Copilot
+  - DOMAIN-SUFFIX,bing.com,Copilot
