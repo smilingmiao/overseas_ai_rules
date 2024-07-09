@@ -2,6 +2,8 @@
 HOST,ai.cn,OpenAI
 HOST-SUFFIX,ai.com,OpenAI
 HOST-SUFFIX,auth0.com,OpenAI
+HOST-SUFFIX,chatgpt.com
+HOST-SUFFIX,openaiapi-site.azureedge.net
 HOST-SUFFIX,browser-intake-datadoghq.com,OpenAI
 HOST-SUFFIX,challenges.cloudflare.com,OpenAI
 HOST-SUFFIX,client-api.arkoselabs.com,OpenAI
