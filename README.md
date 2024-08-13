@@ -5,6 +5,9 @@
 OpenAI
 👉🏻️: https://raw.githubusercontent.com/smilingmiao/overseas_ai_rules/main/OpenAI.list
 
+WeBull
+👉🏻️: https://raw.githubusercontent.com/smilingmiao/overseas_ai_rules/main/WeBull.list
+
 **Clash** 
 
 OpenAI
