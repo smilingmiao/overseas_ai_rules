@@ -8,6 +8,9 @@ OpenAI
 WeBull
 👉🏻️: https://raw.githubusercontent.com/smilingmiao/overseas_ai_rules/main/WeBull.list
 
+TradingView
+👉🏻️: https://raw.githubusercontent.com/smilingmiao/overseas_ai_rules/main/TradingView.list
+
 **Clash** 
 
 OpenAI
