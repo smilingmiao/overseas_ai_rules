@@ -1,0 +1,36 @@
+# NAME: Gemini Pro Max (Optimized)
+
+# [核心 API 与 聊天接口]
+DOMAIN,ai.google.dev
+DOMAIN,makersuite.google.com
+DOMAIN,chat-pa.clients6.google.com
+DOMAIN,alkalimakersuite-pa.clients6.google.com
+DOMAIN,alkalimessages-pa.googleapis.com
+DOMAIN,generativelanguage.googleapis.com
+DOMAIN,proactivebackend-pa.googleapis.com
+
+# [域名后缀匹配]
+DOMAIN-SUFFIX,bard.google.com
+DOMAIN-SUFFIX,gemini.google.com
+DOMAIN-SUFFIX,generativeai.google
+DOMAIN-SUFFIX,deepmind.com
+DOMAIN-SUFFIX,deepmind.google
+
+# [底层框架与验证 - 关键防漏]
+# 很多 Gemini 报错是因为 identitytoolkit (登录态) 或 static (安全校验) 走了直连
+DOMAIN-SUFFIX,googleapis.com
+DOMAIN-SUFFIX,gstatic.com
+DOMAIN-SUFFIX,googleusercontent.com
+DOMAIN,identitytoolkit.googleapis.com
+
+# [关键词匹配]
+DOMAIN-KEYWORD,colab
+DOMAIN-KEYWORD,developerprofiles
+DOMAIN-KEYWORD,generativelanguage
+
+# [全局 Google 修正]
+# 为了防止 Gemini 检测浏览器语言偏好或通过其他 Google 域名检测 IP 归属地，
+# 建议将整个 google.com 域名后缀加入，确保整个 Google 环境的一致性。
+DOMAIN-SUFFIX,google.com
+DOMAIN-SUFFIX,google.ad
+DOMAIN-SUFFIX,googlevideo.com
