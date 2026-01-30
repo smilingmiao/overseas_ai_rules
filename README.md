@@ -1,6 +1,6 @@
 # ai_rules
 
-**QX**
+**QX / Shadowrocket**
 
 OpenAI
 👉🏻️: https://raw.githubusercontent.com/smilingmiao/overseas_ai_rules/main/OpenAI.list
