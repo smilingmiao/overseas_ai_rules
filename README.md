@@ -11,6 +11,9 @@ WeBull
 TradingView
 👉🏻️: https://raw.githubusercontent.com/smilingmiao/overseas_ai_rules/main/TradingView.list
 
+Gemini
+👉🏻️: https://raw.githubusercontent.com/smilingmiao/overseas_ai_rules/main/Gemini.list
+
 **Clash** 
 
 OpenAI
