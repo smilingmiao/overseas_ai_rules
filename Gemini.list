@@ -1,21 +1,5 @@
 # NAME: Gemini Pro Max (Optimized)
 
-# [核心 API 与 聊天接口]
-DOMAIN,ai.google.dev
-DOMAIN,makersuite.google.com
-DOMAIN,chat-pa.clients6.google.com
-DOMAIN,alkalimakersuite-pa.clients6.google.com
-DOMAIN,alkalimessages-pa.googleapis.com
-DOMAIN,generativelanguage.googleapis.com
-DOMAIN,proactivebackend-pa.googleapis.com
-
-# [域名后缀匹配]
-DOMAIN-SUFFIX,bard.google.com
-DOMAIN-SUFFIX,gemini.google.com
-DOMAIN-SUFFIX,generativeai.google
-DOMAIN-SUFFIX,deepmind.com
-DOMAIN-SUFFIX,deepmind.google
-
 # [底层框架与验证 - 关键防漏]
 # 很多 Gemini 报错是因为 identitytoolkit (登录态) 或 static (安全校验) 走了直连
 DOMAIN-SUFFIX,googleapis.com
@@ -34,3 +18,22 @@ DOMAIN-KEYWORD,generativelanguage
 DOMAIN-SUFFIX,google.com
 DOMAIN-SUFFIX,google.ad
 DOMAIN-SUFFIX,googlevideo.com
+
+# [域名后缀匹配]
+DOMAIN-SUFFIX,bard.google.com
+DOMAIN-SUFFIX,gemini.google.com
+DOMAIN-SUFFIX,generativeai.google
+DOMAIN-SUFFIX,deepmind.com
+DOMAIN-SUFFIX,deepmind.google
+
+# [核心 API 与 聊天接口]
+DOMAIN,ai.google.dev
+DOMAIN,makersuite.google.com
+DOMAIN,chat-pa.clients6.google.com
+DOMAIN,alkalimakersuite-pa.clients6.google.com
+DOMAIN,alkalimessages-pa.googleapis.com
+DOMAIN,generativelanguage.googleapis.com
+DOMAIN,proactivebackend-pa.googleapis.com
+
+# 放在 Gemini 规则组的最末尾
+IP-CIDR,74.125.0.0/16,Proxy,no-resolve
