@@ -1,39 +1,48 @@
 # NAME: Gemini Pro Max (Optimized)
 
-# [底层框架与验证 - 关键防漏]
+# [一] 底层框架与登录态（最高优先级，不能漏）
 # 很多 Gemini 报错是因为 identitytoolkit (登录态) 或 static (安全校验) 走了直连
+DOMAIN,gemini.google.com
+DOMAIN,identitytoolkit.googleapis.com
 DOMAIN-SUFFIX,googleapis.com
 DOMAIN-SUFFIX,gstatic.com
 DOMAIN-SUFFIX,googleusercontent.com
-DOMAIN,identitytoolkit.googleapis.com
 
-# [关键词匹配]
-DOMAIN-KEYWORD,colab
-DOMAIN-KEYWORD,developerprofiles
-DOMAIN-KEYWORD,generativelanguage
-
-# [全局 Google 修正]
-# 为了防止 Gemini 检测浏览器语言偏好或通过其他 Google 域名检测 IP 归属地，
-# 建议将整个 google.com 域名后缀加入，确保整个 Google 环境的一致性。
-DOMAIN-SUFFIX,google.com
-DOMAIN-SUFFIX,google.ad
-DOMAIN-SUFFIX,googlevideo.com
-
-# [域名后缀匹配]
-DOMAIN-SUFFIX,bard.google.com
-DOMAIN-SUFFIX,gemini.google.com
-DOMAIN-SUFFIX,generativeai.google
-DOMAIN-SUFFIX,deepmind.com
-DOMAIN-SUFFIX,deepmind.google
-
-# [核心 API 与 聊天接口]
+# [二] 核心 Gemini / Generative AI API
 DOMAIN,ai.google.dev
 DOMAIN,makersuite.google.com
+DOMAIN,generativelanguage.googleapis.com
+DOMAIN-SUFFIX,generativeai.googleapis.com
+
+# [三] WebSocket / Streaming / 实时生成（极易漏）
 DOMAIN,chat-pa.clients6.google.com
 DOMAIN,alkalimakersuite-pa.clients6.google.com
 DOMAIN,alkalimessages-pa.googleapis.com
-DOMAIN,generativelanguage.googleapis.com
 DOMAIN,proactivebackend-pa.googleapis.com
+DOMAIN-SUFFIX,clients6.google.com
+DOMAIN-SUFFIX,clients4.google.com
+DOMAIN-SUFFIX,mtalk.google.com
 
-# 放在 Gemini 规则组的最末尾
+# [四] Google 账号 / 会话一致性（地区风控来源之一）
+DOMAIN,accounts.google.com
+DOMAIN-SUFFIX,oauth2.googleapis.com
+DOMAIN-SUFFIX,myaccount.google.com
+
+# [五] 关键词匹配（保留你原本正确的）
+DOMAIN-KEYWORD,generativelanguage
+DOMAIN-KEYWORD,developerprofiles
+DOMAIN-KEYWORD,colab
+
+# [六] Google 环境一致性（你原本这段是“对的”）
+DOMAIN-SUFFIX,google.com
+DOMAIN-SUFFIX,googlevideo.com
+
+# [七] DeepMind（保留但压缩）
+DOMAIN-SUFFIX,deepmind.google
+DOMAIN-SUFFIX,deepmind.com
+
+# [八] DNS / 区域判定兜底（低频但关键）
+DOMAIN-SUFFIX,dns.google
+
+# [九] IP 兜底（保留你原思路，但更干净）
 IP-CIDR,74.125.0.0/16,Proxy,no-resolve
