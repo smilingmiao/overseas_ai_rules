@@ -1,0 +1,23 @@
+# -----------------------------------------------------------
+# 规则名称：Anti-Video-Addiction
+# 适用平台：Quantumult X
+# 作用：拦截 X (Twitter) 视频流与微信视频号
+# -----------------------------------------------------------
+
+# --- [X / Twitter] ---
+# 拦截 X 的核心视频分发域名
+DOMAIN,video.twimg.com,REJECT
+# 拦截某些区域的备用视频流
+DOMAIN-SUFFIX,video.twitter.com,REJECT
+
+# --- [WeChat / 微信] ---
+# 拦截视频号主视频流
+DOMAIN-SUFFIX,finder.video.qq.com,REJECT
+# 拦截视频号某些加载接口
+DOMAIN-KEYWORD,finder.video,REJECT
+# 屏蔽视频号广告与部分缩略图
+DOMAIN,channels.video.qq.com,REJECT
+
+# --- [补充拦截] ---
+# 如果你想更彻底一点，屏蔽 X 的流媒体上传（防止自己发视频）
+DOMAIN,upload.twitter.com,REJECT
