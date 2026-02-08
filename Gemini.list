@@ -1,19 +1,19 @@
 # ===== Gemini Core =====
-DOMAIN,gemini.google.com,PROXY
+DOMAIN,gemini.google.com,Gemini
 
 # ===== Google Account / Login =====
-DOMAIN,accounts.google.com,PROXY
-DOMAIN,oauth2.googleapis.com,PROXY
+DOMAIN,accounts.google.com,Gemini
+DOMAIN,oauth2.googleapis.com,Gemini
 
 # ===== Gemini Backend / API =====
-DOMAIN-SUFFIX,googleapis.com,PROXY
+DOMAIN-SUFFIX,googleapis.com,Gemini
 
 # ===== Static / CDN =====
-DOMAIN-SUFFIX,gstatic.com,PROXY
-DOMAIN-SUFFIX,googleusercontent.com,PROXY
+DOMAIN-SUFFIX,gstatic.com,Gemini
+DOMAIN-SUFFIX,googleusercontent.com,Gemini
 
 # ===== WebSocket / Realtime =====
-DOMAIN-SUFFIX,google.com,PROXY
+DOMAIN-SUFFIX,google.com,Gemini
 
 # ===== Fallback IP (DNS / SNI issues) =====
 IP-CIDR,142.250.0.0/15,PROXY,no-resolve
