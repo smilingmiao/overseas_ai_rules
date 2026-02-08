@@ -1,48 +1,21 @@
-# NAME: Gemini Pro Max (Optimized)
+# ===== Gemini Core =====
+DOMAIN,gemini.google.com,PROXY
 
-# [一] 底层框架与登录态（最高优先级，不能漏）
-# 很多 Gemini 报错是因为 identitytoolkit (登录态) 或 static (安全校验) 走了直连
-DOMAIN,gemini.google.com
-DOMAIN,identitytoolkit.googleapis.com
-DOMAIN-SUFFIX,googleapis.com
-DOMAIN-SUFFIX,gstatic.com
-DOMAIN-SUFFIX,googleusercontent.com
+# ===== Google Account / Login =====
+DOMAIN,accounts.google.com,PROXY
+DOMAIN,oauth2.googleapis.com,PROXY
 
-# [二] 核心 Gemini / Generative AI API
-DOMAIN,ai.google.dev
-DOMAIN,makersuite.google.com
-DOMAIN,generativelanguage.googleapis.com
-DOMAIN-SUFFIX,generativeai.googleapis.com
+# ===== Gemini Backend / API =====
+DOMAIN-SUFFIX,googleapis.com,PROXY
 
-# [三] WebSocket / Streaming / 实时生成（极易漏）
-DOMAIN,chat-pa.clients6.google.com
-DOMAIN,alkalimakersuite-pa.clients6.google.com
-DOMAIN,alkalimessages-pa.googleapis.com
-DOMAIN,proactivebackend-pa.googleapis.com
-DOMAIN-SUFFIX,clients6.google.com
-DOMAIN-SUFFIX,clients4.google.com
-DOMAIN-SUFFIX,mtalk.google.com
+# ===== Static / CDN =====
+DOMAIN-SUFFIX,gstatic.com,PROXY
+DOMAIN-SUFFIX,googleusercontent.com,PROXY
 
-# [四] Google 账号 / 会话一致性（地区风控来源之一）
-DOMAIN,accounts.google.com
-DOMAIN-SUFFIX,oauth2.googleapis.com
-DOMAIN-SUFFIX,myaccount.google.com
+# ===== WebSocket / Realtime =====
+DOMAIN-SUFFIX,google.com,PROXY
 
-# [五] 关键词匹配（保留你原本正确的）
-DOMAIN-KEYWORD,generativelanguage
-DOMAIN-KEYWORD,developerprofiles
-DOMAIN-KEYWORD,colab
-
-# [六] Google 环境一致性（你原本这段是“对的”）
-DOMAIN-SUFFIX,google.com
-DOMAIN-SUFFIX,googlevideo.com
-
-# [七] DeepMind（保留但压缩）
-DOMAIN-SUFFIX,deepmind.google
-DOMAIN-SUFFIX,deepmind.com
-
-# [八] DNS / 区域判定兜底（低频但关键）
-DOMAIN-SUFFIX,dns.google
-
-# [九] IP 兜底（保留你原思路，但更干净）
-IP-CIDR,74.125.0.0/16,Proxy,no-resolve
+# ===== Fallback IP (DNS / SNI issues) =====
+IP-CIDR,142.250.0.0/15,PROXY,no-resolve
+IP-CIDR,172.217.0.0/16,PROXY,no-resolve
+IP-CIDR,216.58.0.0/15,PROXY,no-resolve
