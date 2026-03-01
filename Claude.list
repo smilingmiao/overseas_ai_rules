@@ -1,0 +1,22 @@
+# --- Claude & Anthropic 核心域名 ---
+DOMAIN-SUFFIX,claude.ai
+DOMAIN-SUFFIX,anthropic.com
+DOMAIN-SUFFIX,claude.com
+DOMAIN-SUFFIX,anthropic.ai
+
+# --- 2026 新增及静态资源加速 ---
+DOMAIN-SUFFIX,anthropic-static.com
+DOMAIN-SUFFIX,claude.sh
+DOMAIN-KEYWORD,anthropic-cdn
+DOMAIN-SUFFIX,anthropic.s3.amazonaws.com
+
+# --- Claude Code & 终端工具所需 (API & 监控) ---
+DOMAIN,statsig.anthropic.com
+DOMAIN,api.anthropic.com
+DOMAIN,console.anthropic.com
+DOMAIN,servestatic.claude.ai
+
+# --- 核心依赖与验证服务 (如果你的节点不稳定，必须加这些) ---
+DOMAIN-SUFFIX,sentry.io
+DOMAIN-SUFFIX,statsig.com
+DOMAIN-SUFFIX,launchdarkly.com
