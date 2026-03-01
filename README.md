@@ -14,6 +14,9 @@ TradingView
 Gemini
 👉🏻️: https://raw.githubusercontent.com/smilingmiao/overseas_ai_rules/main/Gemini.list
 
+Claude
+👉🏻️: https://raw.githubusercontent.com/smilingmiao/overseas_ai_rules/main/Claude.list
+
 **Clash** 
 
 OpenAI
