@@ -1,29 +1,29 @@
 # ===== Gemini Web 核心域名 =====
-DOMAIN,gemini.google.com,Gemini
-DOMAIN,bard.google.com,Gemini
+DOMAIN,gemini.google.com
+DOMAIN,bard.google.com
 
 # ===== 认证与账户同步 =====
-DOMAIN,accounts.google.com,Gemini
-DOMAIN,oauth2.googleapis.com,Gemini
-DOMAIN,play.google.com,Gemini
+DOMAIN,accounts.google.com
+DOMAIN,oauth2.googleapis.com
+DOMAIN,play.google.com
 
 # ===== 静态资源与多模态素材 (图片/视频/插件) =====
-DOMAIN-SUFFIX,gstatic.com,Gemini
-DOMAIN-SUFFIX,googleusercontent.com,Gemini
-DOMAIN-SUFFIX,googlevideo.com,Gemini
-DOMAIN-SUFFIX,ggpht.com,Gemini
+DOMAIN-SUFFIX,gstatic.com
+DOMAIN-SUFFIX,googleusercontent.com
+DOMAIN-SUFFIX,googlevideo.com
+DOMAIN-SUFFIX,ggpht.com
 
 # ===== API 与 后端通信 (流式响应关键) =====
-DOMAIN,generativelanguage.googleapis.com,Gemini
-DOMAIN-SUFFIX,googleapis.com,Gemini
-DOMAIN-SUFFIX,google-analytics.com,Gemini
+DOMAIN,generativelanguage.googleapis.com
+DOMAIN-SUFFIX,googleapis.com
+DOMAIN-SUFFIX,google-analytics.com
 
 # ===== 实时通信与 WebSocket (Gemini Live) =====
-DOMAIN-KEYWORD,speech,Gemini
-DOMAIN-SUFFIX,google.com,Gemini
+DOMAIN-KEYWORD,speech
+DOMAIN-SUFFIX,google.com
 
 # ===== Google One / AI Premium 验证 =====
-DOMAIN,one.google.com,Gemini
+DOMAIN,one.google.com
 
 # ===== Fallback IP (针对 DNS/SNI 问题) =====
 IP-CIDR,142.250.0.0/15,Gemini,no-resolve
