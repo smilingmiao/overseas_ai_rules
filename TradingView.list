@@ -1,2 +1,2 @@
-HOST-WILDCARD, *.tradingview.com, TradingView
-HOST-WILDCARD, *.xstaging.tv, TradingView
+HOST-WILDCARD, *.tradingview.com
+HOST-WILDCARD, *.xstaging.tv
