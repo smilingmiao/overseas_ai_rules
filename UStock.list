@@ -1,0 +1,61 @@
+# >>>>>>>>>>>> [盈透证券 IBKR 终极全量集] <<<<<<<<<<<<
+# 官方主站、多国及地区专属入口
+DOMAIN-SUFFIX,interactivebrokers.com
+DOMAIN-SUFFIX,interactivebrokers.com.hk
+DOMAIN-SUFFIX,interactivebrokers.co.uk
+DOMAIN-SUFFIX,interactivebrokers.ca
+DOMAIN-SUFFIX,interactivebrokers.ie
+DOMAIN-SUFFIX,interactivebrokers.eu
+DOMAIN-SUFFIX,interactivebrokers.com.au
+
+# 核心账户管理、后台、入金、报告与报税核心系统
+DOMAIN-SUFFIX,ibkr.com
+DOMAIN-SUFFIX,ibkr.app
+DOMAIN-SUFFIX,clientam.com
+DOMAIN-SUFFIX,ibllc.com
+
+# 交易网关、API 以及桌面端 TWS 连接服务器
+DOMAIN-SUFFIX,iblink.net
+DOMAIN-SUFFIX,ibkr.info
+DOMAIN-SUFFIX,interactivebrokers.net
+
+# 行情数据专线、图形组件与 WebSocket 持久连接
+DOMAIN-SUFFIX,symphony.com
+DOMAIN-SUFFIX,ib-web-start.s3.amazonaws.com
+DOMAIN-KEYWORD,ibcp
+DOMAIN-KEYWORD,ibg
+
+# IBKR 必备的第三方风控、人机验证与高管安全服务
+DOMAIN-SUFFIX,quovadisglobal.com
+DOMAIN-SUFFIX,digicert.com
+
+# IBKR 全球自治系统（ASN）官方自建机房与底层高频交易结算 IP 网段
+IP-CIDR,63.111.8.0/22
+IP-CIDR,129.231.0.0/16
+IP-CIDR,138.85.0.0/16
+IP-CIDR,208.245.105.0/24
+IP-CIDR,208.245.106.0/24
+IP-CIDR,149.252.0.0/16
+IP-CIDR,12.191.135.0/24
+IP-CIDR,12.201.25.0/24
+
+
+# >>>>>>>>>>>> [第一证券 Firstrade 终极全量集] <<<<<<<<<<<<
+# 主站及地区镜像
+DOMAIN-SUFFIX,firstrade.com
+DOMAIN-SUFFIX,firstrade.com.tw
+
+# 核心交易 API 与移动端高频握手域名
+DOMAIN-SUFFIX,ftapi.com
+DOMAIN-SUFFIX,firstradeapi.com
+DOMAIN-SUFFIX,flashtrade.com
+
+# 底层清算商 Apex 交互、新版图形化动态图表、高级行情分析渲染域名
+DOMAIN-SUFFIX,apexclearing.com
+DOMAIN-SUFFIX,tradingview.com
+DOMAIN-SUFFIX,chartiq.com
+
+# Firstrade & Apex 清算中心核心宿主高频 IP 网段
+IP-CIDR,216.128.84.0/24
+IP-CIDR,69.59.136.0/22
+IP-CIDR,192.190.100.0/23
