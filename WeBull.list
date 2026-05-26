@@ -1,3 +1,7 @@
 # HOST-WILDCARD
 HOST-WILDCARD, webull*.com
 HOST-WILDCARD, *.webull*.com
+HOST-WILDCARD,wbroker*.com
+HOST-WILDCARD,*.wbroker*.com
+
+USER-AGENT,*Webull*
