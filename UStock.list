@@ -59,3 +59,45 @@ DOMAIN-SUFFIX,chartiq.com
 IP-CIDR,216.128.84.0/24
 IP-CIDR,69.59.136.0/22
 IP-CIDR,192.190.100.0/23
+
+
+# >>>>>>>>>>>> [thinkorswim & 嘉信理财 终极全量补完版] <<<<<<<<<<<<
+# 1. thinkorswim 专属核心域名（高频交易网关、桌面端/手机端核心 API）
+DOMAIN-SUFFIX,thinkorswim.com
+DOMAIN-SUFFIX,tosmobile.com
+DOMAIN-SUFFIX,tda-api.com
+DOMAIN-SUFFIX,tdameritrade.com
+DOMAIN-SUFFIX,ameritrade.com
+
+# 2. 嘉信理财统一认证与核心账户清算后台（解决新版 TOS 登录卡死、报错问题）
+DOMAIN-SUFFIX,schwab.com
+DOMAIN-SUFFIX,schwabclient.com
+DOMAIN-SUFFIX,schwabapi.com
+DOMAIN-SUFFIX,charlesschwab.com
+DOMAIN-SUFFIX,schwab-access.com
+
+# 3. 关键字模糊兜底（绝杀所有未公开的、用于分布式行情的子域名，如 cdck-geo 等）
+DOMAIN-KEYWORD,thinkorswim
+DOMAIN-KEYWORD,schwab
+DOMAIN-KEYWORD,tdameritrade
+
+# 4. 核心图表与高级期权链、行情 WebSocket 长连接（防止 K 线图和期权链转圈）
+DOMAIN-SUFFIX,optionsxpress.com
+DOMAIN-SUFFIX,ws.schwab.com
+DOMAIN-SUFFIX,streamer.tdameritrade.com
+
+# 5. 必备的安全审计、Symantec VIP 2FA 双重认证与手机端推送服务
+DOMAIN-SUFFIX,pingidentity.com
+DOMAIN-SUFFIX,okta.com
+DOMAIN-SUFFIX,vip.symantec.com
+DOMAIN-SUFFIX,edge.personalization.schwab.com
+
+# 6. 嘉信理财 (Charles Schwab) 官方注册公网 AS 自治网段全量补齐（物理级封堵 Java 客户端硬编码直连）
+IP-CIDR,162.219.0.0/16
+IP-CIDR,192.31.111.0/24
+IP-CIDR,192.51.68.0/23
+IP-CIDR,198.81.128.0/22
+IP-CIDR,64.20.128.0/18
+IP-CIDR,159.43.0.0/16
+IP-CIDR,12.162.138.0/23
+IP-CIDR,63.241.132.0/24
