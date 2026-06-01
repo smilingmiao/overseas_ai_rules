@@ -40,25 +40,42 @@ IP-CIDR,12.191.135.0/24
 IP-CIDR,12.201.25.0/24
 
 
-# >>>>>>>>>>>> [第一证券 Firstrade 终极全量集] <<<<<<<<<<<<
-# 主站及地区镜像
+# ==========================================
+# 📈 Firstrade (第一证券) 完备规则集 (无策略后缀版)
+# ==========================================
+
+# > 1. 客户端与核心域名
+USER-AGENT,Firstrade*
+DOMAIN-KEYWORD,firstrade
 DOMAIN-SUFFIX,firstrade.com
-DOMAIN-SUFFIX,firstrade.com.tw
+DOMAIN-SUFFIX,firstrade.info
 
-# 核心交易 API 与移动端高频握手域名
-DOMAIN-SUFFIX,ftapi.com
-DOMAIN-SUFFIX,firstradeapi.com
-DOMAIN-SUFFIX,flashtrade.com
-
-# 底层清算商 Apex 交互、新版图形化动态图表、高级行情分析渲染域名
+# > 2. Apex Clearing (清算、资金托管与加密货币)
 DOMAIN-SUFFIX,apexclearing.com
-DOMAIN-SUFFIX,tradingview.com
-DOMAIN-SUFFIX,chartiq.com
+DOMAIN-SUFFIX,apexfintechdocuments.com
+DOMAIN-SUFFIX,apexfintechsolutions.com
+DOMAIN-SUFFIX,apexcrypto.com
 
-# Firstrade & Apex 清算中心核心宿主高频 IP 网段
-IP-CIDR,216.128.84.0/24
-IP-CIDR,69.59.136.0/22
-IP-CIDR,192.190.100.0/23
+# > 3. Plaid (ACH 银行账户安全绑定服务)
+DOMAIN-SUFFIX,plaid.com
+
+# > 4. Broadridge 与电子文档、账单、股东投票
+DOMAIN-SUFFIX,broadridge.com
+DOMAIN-SUFFIX,proxyvote.com
+DOMAIN-SUFFIX,icsdelivery.com
+DOMAIN-SUFFIX,investordelivery.com
+DOMAIN-SUFFIX,documentmailbox.com
+DOMAIN-SUFFIX,digital-delivery.com
+DOMAIN-SUFFIX,isecurus.com
+DOMAIN-SUFFIX,tax-docs.com
+
+# > 5. 附加行情、新闻流与研报数据源
+DOMAIN-SUFFIX,morningstar.com
+DOMAIN-SUFFIX,optionsplay.com
+DOMAIN-SUFFIX,briefing.com
+DOMAIN-SUFFIX,zacks.com
+DOMAIN-SUFFIX,benzinga.com
+DOMAIN-SUFFIX,quotemedia.com
 
 
 # >>>>>>>>>>>> [thinkorswim & 嘉信理财 终极全量补完版] <<<<<<<<<<<<
