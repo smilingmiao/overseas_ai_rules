@@ -1,0 +1,13 @@
+# ===== Wise =====
+
+# Wise 主域
+DOMAIN-SUFFIX,wise.com
+DOMAIN-SUFFIX,transferwise.com
+
+# 兜底（防新域名 / callback / auth）
+DOMAIN-KEYWORD,wise
+DOMAIN-KEYWORD,transferwise
+
+# 身份验证（KYC / 自拍 / 活体）
+DOMAIN-SUFFIX,onfido.com
+DOMAIN-KEYWORD,onfido
