@@ -1,3 +1,9 @@
+DOMAIN,webull.com
+DOMAIN-SUFFIX,webull.com
 DOMAIN-KEYWORD,webull
+
+DOMAIN,wbroker.com
+DOMAIN-SUFFIX,wbroker.com
 DOMAIN-KEYWORD,wbroker
+
 USER-AGENT,*Webull*
