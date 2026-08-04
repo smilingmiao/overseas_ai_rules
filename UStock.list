@@ -1,5 +1,62 @@
-# >>>>>>>>>>>> [盈透证券 IBKR 终极全量集] <<<<<<<<<<<<
-# 官方主站、多国及地区专属入口
+# ================================================================
+# 🏛️ 1. 嘉信理财 (Charles Schwab) & thinkorswim (TOS) 终极全量集
+# ================================================================
+
+# > TOS 客户端与专属 API 网关
+USER-AGENT,thinkorswim*
+USER-AGENT,Schwab*
+DOMAIN-SUFFIX,thinkorswim.com
+DOMAIN-SUFFIX,tosmobile.com
+DOMAIN-SUFFIX,tda-api.com
+DOMAIN-SUFFIX,tdameritrade.com
+DOMAIN-SUFFIX,ameritrade.com
+
+# > Schwab 核心账户、API 与统一认证后台
+DOMAIN-SUFFIX,schwab.com
+DOMAIN-SUFFIX,schwabclient.com
+DOMAIN-SUFFIX,schwabapi.com
+DOMAIN-SUFFIX,charlesschwab.com
+DOMAIN-SUFFIX,schwab-access.com
+DOMAIN-SUFFIX,schwabtech.cn
+
+# > Schwab & TOS 图表、高级期权链与 WebSocket 持久长连接
+DOMAIN-SUFFIX,optionsxpress.com
+DOMAIN-SUFFIX,ws.schwab.com
+DOMAIN-SUFFIX,streamer.tdameritrade.com
+
+# > 关键字模糊兜底（涵盖分布式行情与地理路由，如 cdck-geo 等）
+DOMAIN-KEYWORD,thinkorswim
+DOMAIN-KEYWORD,schwab
+DOMAIN-KEYWORD,tdameritrade
+
+# > 登录风控、设备指纹识别、2FA 与推送服务（关键！防登录转圈/卡死）
+DOMAIN-SUFFIX,tmxanalytics.com
+DOMAIN-SUFFIX,threatmetrix.com
+DOMAIN-SUFFIX,pingidentity.com
+DOMAIN-SUFFIX,okta.com
+DOMAIN-SUFFIX,vip.symantec.com
+DOMAIN-SUFFIX,edge.personalization.schwab.com
+
+# > Schwab 官方公网 AS 自治网段（物理级封堵 Java/TWS/TOS 硬编码直连 IP）
+IP-CIDR,162.219.0.0/16
+IP-CIDR,192.31.111.0/24
+IP-CIDR,192.51.68.0/23
+IP-CIDR,198.81.128.0/22
+IP-CIDR,199.103.0.0/16
+IP-CIDR,64.20.128.0/18
+IP-CIDR,159.43.0.0/16
+IP-CIDR,12.162.138.0/23
+IP-CIDR,63.241.132.0/24
+IP-CIDR,68.12.0.0/14
+
+
+# ================================================================
+# 🌐 2. 盈透证券 (Interactive Brokers / IBKR) 终极全量集
+# ================================================================
+
+# > 客户端 UA 与多国/地区官方入口
+USER-AGENT,IBKey*
+USER-AGENT,TWS*
 DOMAIN-SUFFIX,interactivebrokers.com
 DOMAIN-SUFFIX,interactivebrokers.com.hk
 DOMAIN-SUFFIX,interactivebrokers.co.uk
@@ -8,28 +65,31 @@ DOMAIN-SUFFIX,interactivebrokers.ie
 DOMAIN-SUFFIX,interactivebrokers.eu
 DOMAIN-SUFFIX,interactivebrokers.com.au
 
-# 核心账户管理、后台、入金、报告与报税核心系统
+# > 核心账户管理、后台、入金、报告与移动端推送
 DOMAIN-SUFFIX,ibkr.com
 DOMAIN-SUFFIX,ibkr.app
+DOMAIN-SUFFIX,ibkrapps.com
+DOMAIN-SUFFIX,ibkr.us
 DOMAIN-SUFFIX,clientam.com
 DOMAIN-SUFFIX,ibllc.com
 
-# 交易网关、API 以及桌面端 TWS 连接服务器
+# > 交易网关、API 以及桌面端 TWS 连接服务器
 DOMAIN-SUFFIX,iblink.net
 DOMAIN-SUFFIX,ibkr.info
 DOMAIN-SUFFIX,interactivebrokers.net
 
-# 行情数据专线、图形组件与 WebSocket 持久连接
+# > 行情数据专线、图形组件与 WebSocket 持久连接
 DOMAIN-SUFFIX,symphony.com
 DOMAIN-SUFFIX,ib-web-start.s3.amazonaws.com
 DOMAIN-KEYWORD,ibcp
 DOMAIN-KEYWORD,ibg
 
-# IBKR 必备的第三方风控、人机验证与高管安全服务
+# > 第三方风控、人机验证与 SSL 证书安全服务
 DOMAIN-SUFFIX,quovadisglobal.com
 DOMAIN-SUFFIX,digicert.com
+DOMAIN-SUFFIX,arkoselabs.com
 
-# IBKR 全球自治系统（ASN）官方自建机房与底层高频交易结算 IP 网段
+# > IBKR 全球自治系统（ASN）自建机房与底层高频交易结算 IP 网段
 IP-CIDR,63.111.8.0/22
 IP-CIDR,129.231.0.0/16
 IP-CIDR,138.85.0.0/16
@@ -40,26 +100,28 @@ IP-CIDR,12.191.135.0/24
 IP-CIDR,12.201.25.0/24
 
 
-# ==========================================
-# 📈 Firstrade (第一证券) 完备规则集 (无策略后缀版)
-# ==========================================
+# ================================================================
+# 📈 3. 第一证券 (Firstrade) 完备规则集
+# ================================================================
 
-# > 1. 客户端与核心域名
+# > 客户端与核心域名
 USER-AGENT,Firstrade*
 DOMAIN-KEYWORD,firstrade
 DOMAIN-SUFFIX,firstrade.com
 DOMAIN-SUFFIX,firstrade.info
+DOMAIN-SUFFIX,firstrade.asia
+DOMAIN-SUFFIX,ftrading.com
 
-# > 2. Apex Clearing (清算、资金托管与加密货币)
+# > Apex Clearing (清算、资金托管与加密货币)
 DOMAIN-SUFFIX,apexclearing.com
 DOMAIN-SUFFIX,apexfintechdocuments.com
 DOMAIN-SUFFIX,apexfintechsolutions.com
 DOMAIN-SUFFIX,apexcrypto.com
 
-# > 3. Plaid (ACH 银行账户安全绑定服务)
+# > Plaid (ACH 银行账户安全绑定服务)
 DOMAIN-SUFFIX,plaid.com
 
-# > 4. Broadridge 与电子文档、账单、股东投票
+# > Broadridge 与电子文档、账单、股东投票
 DOMAIN-SUFFIX,broadridge.com
 DOMAIN-SUFFIX,proxyvote.com
 DOMAIN-SUFFIX,icsdelivery.com
@@ -69,52 +131,10 @@ DOMAIN-SUFFIX,digital-delivery.com
 DOMAIN-SUFFIX,isecurus.com
 DOMAIN-SUFFIX,tax-docs.com
 
-# > 5. 附加行情、新闻流与研报数据源
+# > 附加行情、新闻流与研报数据源
 DOMAIN-SUFFIX,morningstar.com
 DOMAIN-SUFFIX,optionsplay.com
 DOMAIN-SUFFIX,briefing.com
 DOMAIN-SUFFIX,zacks.com
 DOMAIN-SUFFIX,benzinga.com
 DOMAIN-SUFFIX,quotemedia.com
-
-
-# >>>>>>>>>>>> [thinkorswim & 嘉信理财 终极全量补完版] <<<<<<<<<<<<
-# 1. thinkorswim 专属核心域名（高频交易网关、桌面端/手机端核心 API）
-DOMAIN-SUFFIX,thinkorswim.com
-DOMAIN-SUFFIX,tosmobile.com
-DOMAIN-SUFFIX,tda-api.com
-DOMAIN-SUFFIX,tdameritrade.com
-DOMAIN-SUFFIX,ameritrade.com
-
-# 2. 嘉信理财统一认证与核心账户清算后台（解决新版 TOS 登录卡死、报错问题）
-DOMAIN-SUFFIX,schwab.com
-DOMAIN-SUFFIX,schwabclient.com
-DOMAIN-SUFFIX,schwabapi.com
-DOMAIN-SUFFIX,charlesschwab.com
-DOMAIN-SUFFIX,schwab-access.com
-
-# 3. 关键字模糊兜底（绝杀所有未公开的、用于分布式行情的子域名，如 cdck-geo 等）
-DOMAIN-KEYWORD,thinkorswim
-DOMAIN-KEYWORD,schwab
-DOMAIN-KEYWORD,tdameritrade
-
-# 4. 核心图表与高级期权链、行情 WebSocket 长连接（防止 K 线图和期权链转圈）
-DOMAIN-SUFFIX,optionsxpress.com
-DOMAIN-SUFFIX,ws.schwab.com
-DOMAIN-SUFFIX,streamer.tdameritrade.com
-
-# 5. 必备的安全审计、Symantec VIP 2FA 双重认证与手机端推送服务
-DOMAIN-SUFFIX,pingidentity.com
-DOMAIN-SUFFIX,okta.com
-DOMAIN-SUFFIX,vip.symantec.com
-DOMAIN-SUFFIX,edge.personalization.schwab.com
-
-# 6. 嘉信理财 (Charles Schwab) 官方注册公网 AS 自治网段全量补齐（物理级封堵 Java 客户端硬编码直连）
-IP-CIDR,162.219.0.0/16
-IP-CIDR,192.31.111.0/24
-IP-CIDR,192.51.68.0/23
-IP-CIDR,198.81.128.0/22
-IP-CIDR,64.20.128.0/18
-IP-CIDR,159.43.0.0/16
-IP-CIDR,12.162.138.0/23
-IP-CIDR,63.241.132.0/24
